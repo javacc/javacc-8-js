@@ -1,18 +1,20 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org</groupId>
 		<artifactId>javacc</artifactId>
-		<version>8.0.4</version>
+		<version>8.0.5</version>
 		<relativePath />
 	</parent>
+
 	<groupId>org.javacc.generator</groupId>
 	<artifactId>js</artifactId>
-	<version>8.0.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>JavaCC default JavaScript code generator</name>
-	<description>JavaCC default JavaScript code generator</description>
 
+	<name>JavaCC default javascript code generator: js</name>
+	<description>JavaCC default javascript code generator: js</description>
 	<scm>
 		<connection>scm:git:https://git@github.com/javacc/javacc-8-js.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/javacc/javacc-8-js.git</developerConnection>
@@ -21,11 +23,12 @@
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/javacc/javacc-8-java/issues</url>
+		<url>https://github.com/javacc/javacc-8-js/issues</url>
 	</issueManagement>
 	<properties>
-		<javacc.core>8.0.0</javacc.core>
+		<root>${basedir}/../..</root>
 		<javacc.js>${project.version}</javacc.js>
+		<javacc-maven-plugin>3.0.3</javacc-maven-plugin>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -42,9 +45,5 @@
 			<artifactId>core</artifactId>
 		</dependency>
 	</dependencies>
-	<modules>
-		<module>it</module>
-		<module>js</module>
-	</modules>
-
+	<version>8.0.0-SNAPSHOT</version>
 </project>
