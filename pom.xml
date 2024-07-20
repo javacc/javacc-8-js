@@ -36,44 +36,46 @@ THE POSSIBILITY OF SUCH DAMAGE.
   <parent>
     <groupId>org</groupId>
     <artifactId>javacc</artifactId>
-    <version>8.0.5</version>
-    <relativePath />
+    <version>8.1.0-SNAPSHOT</version>
   </parent>
 
   <groupId>org.javacc.generator</groupId>
   <artifactId>js</artifactId>
+  <!--  <version>8.1.0-SNAPSHOT</version>-->
+  <packaging>jar</packaging>
 
-  <name>JavaCC default javascript code generator: js</name>
-  <description>JavaCC default javascript code generator: js</description>
+  <name>JavaCC Javascript code generator</name>
+  <description>Javascript code generator module of JavaCC</description>
+  <url>https://github.com/javacc/javacc-8-js</url>
+  <inceptionYear>2009</inceptionYear>
+
   <scm>
     <connection>scm:git:https://git@github.com/javacc/javacc-8-js.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/javacc/javacc-8-js.git</developerConnection>
     <url>scm:git:ssh://git@github.com/javacc/javacc-8-js.git</url>
     <tag>HEAD</tag>
   </scm>
+  
   <issueManagement>
     <system>GitHub</system>
     <url>https://github.com/javacc/javacc-8-js/issues</url>
   </issueManagement>
-  <properties>
-    <root>${basedir}/../..</root>
-    <javacc.js>${project.version}</javacc.js>
-    <javacc-maven-plugin>3.0.3</javacc-maven-plugin>
-  </properties>
-  <dependencyManagement>
+  
+   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.javacc</groupId>
         <artifactId>core</artifactId>
-        <version>${javacc.core}</version>
+        <version>${javacc.core.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
+  
   <dependencies>
     <dependency>
       <groupId>org.javacc</groupId>
       <artifactId>core</artifactId>
     </dependency>
   </dependencies>
-  <version>8.0.0-SNAPSHOT</version>
+  
 </project>
